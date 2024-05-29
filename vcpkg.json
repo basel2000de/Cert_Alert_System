@@ -1,0 +1,24 @@
+{
+  "name" : "cert-alert-system",
+  "version-string" : "1.0.0",
+  "builtin-baseline" : "9224b3bbd8df24999d85720b1d005dd6f969ade0",
+  "dependencies" : [ {
+    "name" : "sqlite3",
+    "version>=" : "3.45.3"
+  }, {
+    "name" : "vcpkg-cmake-config",
+    "version>=" : "2022-02-06#1"
+  }, {
+    "name" : "vcpkg-cmake-get-vars",
+    "version>=" : "2023-12-31"
+  }, {
+    "name" : "vcpkg-cmake",
+    "version>=" : "2023-05-04"
+  }, {
+    "name" : "pugixml",
+    "version>=" : "1.14"
+  }, {
+    "name" : "cpr",
+    "version>=" : "1.10.5#2"
+  } ]
+}
