@@ -1,5 +1,5 @@
-C:/Users/bhussein/Desktop/CERT Alert System/cmake-build-debug/CMakeFiles/sqlite3.dir
-C:/Users/bhussein/Desktop/CERT Alert System/cmake-build-debug/CMakeFiles/pugixml.dir
 C:/Users/bhussein/Desktop/CERT Alert System/cmake-build-debug/CMakeFiles/CERT_Alert_System.dir
+C:/Users/bhussein/Desktop/CERT Alert System/cmake-build-debug/CMakeFiles/sqlite3.dir
+C:/Users/bhussein/Desktop/CERT Alert System/cmake-build-debug/CMakeFiles/mailclient-cpp.dir
 C:/Users/bhussein/Desktop/CERT Alert System/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/bhussein/Desktop/CERT Alert System/cmake-build-debug/CMakeFiles/rebuild_cache.dir
