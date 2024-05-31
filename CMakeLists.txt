@@ -3,16 +3,20 @@ project(CERT_Alert_System)
 
 set(CMAKE_CXX_STANDARD 17)
 
+add_executable(CERT_Alert_System main.cpp cli.cpp db_init.cpp db_operations.cpp rss_parser.cpp rss_fetcher.cpp)
+
 # Add SQLite3 library
 add_library(sqlite3 libs/sqlite3.c)
 include_directories(libs)
+target_link_libraries(CERT_Alert_System sqlite3)
 
-# Add PugiXML library
-add_library(pugixml libs/pugixml.cpp)
-include_directories(libs)
-
-# Add the executable for the CERT Alert System
-add_executable(CERT_Alert_System main.cpp rss_parser.cpp db_init.cpp rss_fetcher.cpp
-        db_operations.h
-        db_operations.cpp)
-target_link_libraries(CERT_Alert_System sqlite3 pugixml wininet)
+# Add mailclient-cpp library
+include_directories(${CMAKE_SOURCE_DIR}/libs/mailclient-cpp-master/MAIL)
+add_library(mailclient-cpp STATIC
+        ${CMAKE_SOURCE_DIR}/libs/mailclient-cpp-master/MAIL/SMTPClient.cpp
+        ${CMAKE_SOURCE_DIR}/libs/mailclient-cpp-master/MAIL/MAILClient.cpp
+        ${CMAKE_SOURCE_DIR}/libs/mailclient-cpp-master/MAIL/POPClient.cpp
+        ${CMAKE_SOURCE_DIR}/libs/mailclient-cpp-master/MAIL/IMAPClient.cpp
+        ${CMAKE_SOURCE_DIR}/libs/mailclient-cpp-master/MAIL/CurlHandle.cpp
+)
+target_link_libraries(CERT_Alert_System mailclient-cpp)

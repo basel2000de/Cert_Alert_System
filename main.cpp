@@ -1,8 +1,8 @@
 #include <iostream>
 #include <sqlite3.h>
 #include "db_init.h"
-#include "db_operations.h"
-#include "rss_parser.h"
+#include "cli.h"
+#include "ini.h" // You can use an INI parsing library like inih
 
 int main() {
     sqlite3* db;
@@ -18,23 +18,47 @@ int main() {
     // Initialize the database
     initializeDatabase(db);
 
-    // Clear previous keywords
-    clearKeywords(db);
-
-    // Add test keywords
-    addKeyword(db, "GNOME");
-    addKeyword(db, "ILIAS");
-
-    // Fetch and print keywords for verification
-    std::vector<std::string> keywords = fetchKeywords(db);
-    std::cout << "Keywords in database:" << std::endl;
-    for (const auto& keyword : keywords) {
-        std::cout << keyword << std::endl;
+    // Load email settings from config file
+    mINI::INIFile file("config.ini");
+    mINI::INIStructure ini;
+    if (file.read(ini)) {
+        std::string recipientEmail = ini["EmailSettings"]["recipient_email"];
+        std::string recipientName = ini["EmailSettings"]["recipient_name"];
     }
 
-    // Parse the RSS feed
-    std::string rssFeedUrl = "https://wid.cert-bund.de/content/public/securityAdvisory/rss";
-    parseRSSFeed(db, rssFeedUrl);
+    int choice;
+    do {
+        displayMenu();
+        while (!(std::cin >> choice)) {
+            std::cin.clear();
+            std::cin.ignore(123, '\n');
+            std::cerr << "Invalid input. Please enter a number." << std::endl;
+            displayMenu();
+        }
+
+        switch (choice) {
+            case 1:
+                handleAddKeyword(db);
+            break;
+            case 2:
+                handleRemoveKeyword(db);
+            break;
+            case 3:
+                handleListKeywords(db);
+            break;
+            case 4:
+                handleParseRSSFeed(db);
+            break;
+            case 5:
+                configureEmailSettings(db);
+            break;
+            case 6:
+                std::cout << "Exiting..." << std::endl;
+            break;
+            default:
+                std::cerr << "Invalid choice. Please try again." << std::endl;
+        }
+    } while (choice != 6);
 
     sqlite3_close(db);
     return 0;
