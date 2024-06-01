@@ -3,14 +3,18 @@
 #include "db_init.h"
 #include "db_operations.h"
 #include "rss_parser.h"
+#include <memory>
 
 int main() {
     sqlite3* db;
-    int exit = sqlite3_open("test.db", &db);
+    int exitCode = sqlite3_open("test.db", &db);
 
-    if (exit) {
+    // This automatically closes the database when it goes out of scope.
+    std::unique_ptr<sqlite3, decltype(&sqlite3_close)> dbPtr(db, sqlite3_close);
+    if (exitCode) {
         std::cerr << "Can't open database: " << sqlite3_errmsg(db) << std::endl;
-        return 0;
+        // When an error occurs, the program should return a non-zero value to indicate failure.
+        return 1;
     } else {
         std::cout << "Opened database successfully" << std::endl;
     }
@@ -33,9 +37,8 @@ int main() {
     }
 
     // Parse the RSS feed
-    std::string rssFeedUrl = "https://wid.cert-bund.de/content/public/securityAdvisory/rss";
+    auto rssFeedUrl = "https://wid.cert-bund.de/content/public/securityAdvisory/rss";
     parseRSSFeed(db, rssFeedUrl);
 
-    sqlite3_close(db);
     return 0;
 }
