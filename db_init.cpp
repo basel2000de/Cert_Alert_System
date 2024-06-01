@@ -21,10 +21,12 @@ void initializeDatabase(sqlite3* db) {
         );
     )";
 
-    int exit = sqlite3_exec(db, sql, NULL, 0, &errorMessage);
+    int exit = sqlite3_exec(db, sql, nullptr, nullptr, &errorMessage);
     if (exit != SQLITE_OK) {
         std::cerr << "Error in initializing database: " << errorMessage << std::endl;
         sqlite3_free(errorMessage);
+        // Don't fail silently, throw an exception to indicate failure.
+        throw std::runtime_error("Error in initializing database");
     } else {
         std::cout << "Database initialized successfully" << std::endl;
     }
