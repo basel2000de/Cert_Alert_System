@@ -1,7 +1,7 @@
+#include "db_operations.h"
 #include <vector>
 #include <string>
 #include <sqlite3.h>
-#include "db_operations.h"
 
 std::vector<std::string> fetchKeywords(sqlite3* db) {
     std::vector<std::string> keywords;

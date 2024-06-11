@@ -47,47 +47,68 @@ cmake_ninja_workdir = C$:/Users/bhussein/Desktop/CERT$ Alert$ System/cmake-build
 #############################################
 # Order-only phony target for CERT_Alert_System
 
-build cmake_object_order_depends_target_CERT_Alert_System: phony || cmake_object_order_depends_target_mailclient-cpp cmake_object_order_depends_target_sqlite3
+build cmake_object_order_depends_target_CERT_Alert_System: phony || cmake_object_order_depends_target_pugixml-static cmake_object_order_depends_target_sqlite3
 
 build CMakeFiles/CERT_Alert_System.dir/main.cpp.obj: CXX_COMPILER__CERT_Alert_System_unscanned_Debug C$:/Users/bhussein/Desktop/CERT$ Alert$ System/main.cpp || cmake_object_order_depends_target_CERT_Alert_System
   DEP_FILE = CMakeFiles\CERT_Alert_System.dir\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/mailclient-cpp-master/MAIL"
+  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/pugixml/src"
   OBJECT_DIR = CMakeFiles\CERT_Alert_System.dir
   OBJECT_FILE_DIR = CMakeFiles\CERT_Alert_System.dir
 
 build CMakeFiles/CERT_Alert_System.dir/cli.cpp.obj: CXX_COMPILER__CERT_Alert_System_unscanned_Debug C$:/Users/bhussein/Desktop/CERT$ Alert$ System/cli.cpp || cmake_object_order_depends_target_CERT_Alert_System
   DEP_FILE = CMakeFiles\CERT_Alert_System.dir\cli.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/mailclient-cpp-master/MAIL"
+  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/pugixml/src"
   OBJECT_DIR = CMakeFiles\CERT_Alert_System.dir
   OBJECT_FILE_DIR = CMakeFiles\CERT_Alert_System.dir
 
 build CMakeFiles/CERT_Alert_System.dir/db_init.cpp.obj: CXX_COMPILER__CERT_Alert_System_unscanned_Debug C$:/Users/bhussein/Desktop/CERT$ Alert$ System/db_init.cpp || cmake_object_order_depends_target_CERT_Alert_System
   DEP_FILE = CMakeFiles\CERT_Alert_System.dir\db_init.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/mailclient-cpp-master/MAIL"
+  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/pugixml/src"
   OBJECT_DIR = CMakeFiles\CERT_Alert_System.dir
   OBJECT_FILE_DIR = CMakeFiles\CERT_Alert_System.dir
 
 build CMakeFiles/CERT_Alert_System.dir/db_operations.cpp.obj: CXX_COMPILER__CERT_Alert_System_unscanned_Debug C$:/Users/bhussein/Desktop/CERT$ Alert$ System/db_operations.cpp || cmake_object_order_depends_target_CERT_Alert_System
   DEP_FILE = CMakeFiles\CERT_Alert_System.dir\db_operations.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/mailclient-cpp-master/MAIL"
+  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/pugixml/src"
   OBJECT_DIR = CMakeFiles\CERT_Alert_System.dir
   OBJECT_FILE_DIR = CMakeFiles\CERT_Alert_System.dir
 
 build CMakeFiles/CERT_Alert_System.dir/rss_parser.cpp.obj: CXX_COMPILER__CERT_Alert_System_unscanned_Debug C$:/Users/bhussein/Desktop/CERT$ Alert$ System/rss_parser.cpp || cmake_object_order_depends_target_CERT_Alert_System
   DEP_FILE = CMakeFiles\CERT_Alert_System.dir\rss_parser.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/mailclient-cpp-master/MAIL"
+  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/pugixml/src"
   OBJECT_DIR = CMakeFiles\CERT_Alert_System.dir
   OBJECT_FILE_DIR = CMakeFiles\CERT_Alert_System.dir
 
 build CMakeFiles/CERT_Alert_System.dir/rss_fetcher.cpp.obj: CXX_COMPILER__CERT_Alert_System_unscanned_Debug C$:/Users/bhussein/Desktop/CERT$ Alert$ System/rss_fetcher.cpp || cmake_object_order_depends_target_CERT_Alert_System
   DEP_FILE = CMakeFiles\CERT_Alert_System.dir\rss_fetcher.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/mailclient-cpp-master/MAIL"
+  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/pugixml/src"
+  OBJECT_DIR = CMakeFiles\CERT_Alert_System.dir
+  OBJECT_FILE_DIR = CMakeFiles\CERT_Alert_System.dir
+
+build CMakeFiles/CERT_Alert_System.dir/config.cpp.obj: CXX_COMPILER__CERT_Alert_System_unscanned_Debug C$:/Users/bhussein/Desktop/CERT$ Alert$ System/config.cpp || cmake_object_order_depends_target_CERT_Alert_System
+  DEP_FILE = CMakeFiles\CERT_Alert_System.dir\config.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/pugixml/src"
+  OBJECT_DIR = CMakeFiles\CERT_Alert_System.dir
+  OBJECT_FILE_DIR = CMakeFiles\CERT_Alert_System.dir
+
+build CMakeFiles/CERT_Alert_System.dir/log.cpp.obj: CXX_COMPILER__CERT_Alert_System_unscanned_Debug C$:/Users/bhussein/Desktop/CERT$ Alert$ System/log.cpp || cmake_object_order_depends_target_CERT_Alert_System
+  DEP_FILE = CMakeFiles\CERT_Alert_System.dir\log.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/pugixml/src"
+  OBJECT_DIR = CMakeFiles\CERT_Alert_System.dir
+  OBJECT_FILE_DIR = CMakeFiles\CERT_Alert_System.dir
+
+build CMakeFiles/CERT_Alert_System.dir/strptime.cpp.obj: CXX_COMPILER__CERT_Alert_System_unscanned_Debug C$:/Users/bhussein/Desktop/CERT$ Alert$ System/strptime.cpp || cmake_object_order_depends_target_CERT_Alert_System
+  DEP_FILE = CMakeFiles\CERT_Alert_System.dir\strptime.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/pugixml/src"
   OBJECT_DIR = CMakeFiles\CERT_Alert_System.dir
   OBJECT_FILE_DIR = CMakeFiles\CERT_Alert_System.dir
 
@@ -99,9 +120,9 @@ build CMakeFiles/CERT_Alert_System.dir/rss_fetcher.cpp.obj: CXX_COMPILER__CERT_A
 #############################################
 # Link the executable CERT_Alert_System.exe
 
-build CERT_Alert_System.exe: CXX_EXECUTABLE_LINKER__CERT_Alert_System_Debug CMakeFiles/CERT_Alert_System.dir/main.cpp.obj CMakeFiles/CERT_Alert_System.dir/cli.cpp.obj CMakeFiles/CERT_Alert_System.dir/db_init.cpp.obj CMakeFiles/CERT_Alert_System.dir/db_operations.cpp.obj CMakeFiles/CERT_Alert_System.dir/rss_parser.cpp.obj CMakeFiles/CERT_Alert_System.dir/rss_fetcher.cpp.obj | libsqlite3.a libmailclient-cpp.a || libmailclient-cpp.a libsqlite3.a
+build CERT_Alert_System.exe: CXX_EXECUTABLE_LINKER__CERT_Alert_System_Debug CMakeFiles/CERT_Alert_System.dir/main.cpp.obj CMakeFiles/CERT_Alert_System.dir/cli.cpp.obj CMakeFiles/CERT_Alert_System.dir/db_init.cpp.obj CMakeFiles/CERT_Alert_System.dir/db_operations.cpp.obj CMakeFiles/CERT_Alert_System.dir/rss_parser.cpp.obj CMakeFiles/CERT_Alert_System.dir/rss_fetcher.cpp.obj CMakeFiles/CERT_Alert_System.dir/config.cpp.obj CMakeFiles/CERT_Alert_System.dir/log.cpp.obj CMakeFiles/CERT_Alert_System.dir/strptime.cpp.obj | libsqlite3.a libs/pugixml/libpugixml.a || libs/pugixml/libpugixml.a libsqlite3.a
   FLAGS = -g
-  LINK_LIBRARIES = libsqlite3.a  libmailclient-cpp.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libsqlite3.a  -lMAPI32  -lwininet  libs/pugixml/libpugixml.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CERT_Alert_System.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -121,7 +142,7 @@ build cmake_object_order_depends_target_sqlite3: phony || CMakeFiles/sqlite3.dir
 build CMakeFiles/sqlite3.dir/libs/sqlite3.c.obj: C_COMPILER__sqlite3_unscanned_Debug C$:/Users/bhussein/Desktop/CERT$ Alert$ System/libs/sqlite3.c || cmake_object_order_depends_target_sqlite3
   DEP_FILE = CMakeFiles\sqlite3.dir\libs\sqlite3.c.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/mailclient-cpp-master/MAIL"
+  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs"
   OBJECT_DIR = CMakeFiles\sqlite3.dir
   OBJECT_FILE_DIR = CMakeFiles\sqlite3.dir\libs
 
@@ -140,66 +161,6 @@ build libsqlite3.a: C_STATIC_LIBRARY_LINKER__sqlite3_Debug CMakeFiles/sqlite3.di
   PRE_LINK = cd .
   TARGET_FILE = libsqlite3.a
   TARGET_PDB = sqlite3.a.dbg
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target mailclient-cpp
-
-
-#############################################
-# Order-only phony target for mailclient-cpp
-
-build cmake_object_order_depends_target_mailclient-cpp: phony || CMakeFiles/mailclient-cpp.dir
-
-build CMakeFiles/mailclient-cpp.dir/libs/mailclient-cpp-master/MAIL/SMTPClient.cpp.obj: CXX_COMPILER__mailclient-cpp_unscanned_Debug C$:/Users/bhussein/Desktop/CERT$ Alert$ System/libs/mailclient-cpp-master/MAIL/SMTPClient.cpp || cmake_object_order_depends_target_mailclient-cpp
-  DEP_FILE = CMakeFiles\mailclient-cpp.dir\libs\mailclient-cpp-master\MAIL\SMTPClient.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/mailclient-cpp-master/MAIL"
-  OBJECT_DIR = CMakeFiles\mailclient-cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\mailclient-cpp.dir\libs\mailclient-cpp-master\MAIL
-
-build CMakeFiles/mailclient-cpp.dir/libs/mailclient-cpp-master/MAIL/MAILClient.cpp.obj: CXX_COMPILER__mailclient-cpp_unscanned_Debug C$:/Users/bhussein/Desktop/CERT$ Alert$ System/libs/mailclient-cpp-master/MAIL/MAILClient.cpp || cmake_object_order_depends_target_mailclient-cpp
-  DEP_FILE = CMakeFiles\mailclient-cpp.dir\libs\mailclient-cpp-master\MAIL\MAILClient.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/mailclient-cpp-master/MAIL"
-  OBJECT_DIR = CMakeFiles\mailclient-cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\mailclient-cpp.dir\libs\mailclient-cpp-master\MAIL
-
-build CMakeFiles/mailclient-cpp.dir/libs/mailclient-cpp-master/MAIL/POPClient.cpp.obj: CXX_COMPILER__mailclient-cpp_unscanned_Debug C$:/Users/bhussein/Desktop/CERT$ Alert$ System/libs/mailclient-cpp-master/MAIL/POPClient.cpp || cmake_object_order_depends_target_mailclient-cpp
-  DEP_FILE = CMakeFiles\mailclient-cpp.dir\libs\mailclient-cpp-master\MAIL\POPClient.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/mailclient-cpp-master/MAIL"
-  OBJECT_DIR = CMakeFiles\mailclient-cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\mailclient-cpp.dir\libs\mailclient-cpp-master\MAIL
-
-build CMakeFiles/mailclient-cpp.dir/libs/mailclient-cpp-master/MAIL/IMAPClient.cpp.obj: CXX_COMPILER__mailclient-cpp_unscanned_Debug C$:/Users/bhussein/Desktop/CERT$ Alert$ System/libs/mailclient-cpp-master/MAIL/IMAPClient.cpp || cmake_object_order_depends_target_mailclient-cpp
-  DEP_FILE = CMakeFiles\mailclient-cpp.dir\libs\mailclient-cpp-master\MAIL\IMAPClient.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/mailclient-cpp-master/MAIL"
-  OBJECT_DIR = CMakeFiles\mailclient-cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\mailclient-cpp.dir\libs\mailclient-cpp-master\MAIL
-
-build CMakeFiles/mailclient-cpp.dir/libs/mailclient-cpp-master/MAIL/CurlHandle.cpp.obj: CXX_COMPILER__mailclient-cpp_unscanned_Debug C$:/Users/bhussein/Desktop/CERT$ Alert$ System/libs/mailclient-cpp-master/MAIL/CurlHandle.cpp || cmake_object_order_depends_target_mailclient-cpp
-  DEP_FILE = CMakeFiles\mailclient-cpp.dir\libs\mailclient-cpp-master\MAIL\CurlHandle.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/mailclient-cpp-master/MAIL"
-  OBJECT_DIR = CMakeFiles\mailclient-cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\mailclient-cpp.dir\libs\mailclient-cpp-master\MAIL
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target mailclient-cpp
-
-
-#############################################
-# Link the static library libmailclient-cpp.a
-
-build libmailclient-cpp.a: CXX_STATIC_LIBRARY_LINKER__mailclient-cpp_Debug CMakeFiles/mailclient-cpp.dir/libs/mailclient-cpp-master/MAIL/SMTPClient.cpp.obj CMakeFiles/mailclient-cpp.dir/libs/mailclient-cpp-master/MAIL/MAILClient.cpp.obj CMakeFiles/mailclient-cpp.dir/libs/mailclient-cpp-master/MAIL/POPClient.cpp.obj CMakeFiles/mailclient-cpp.dir/libs/mailclient-cpp-master/MAIL/IMAPClient.cpp.obj CMakeFiles/mailclient-cpp.dir/libs/mailclient-cpp-master/MAIL/CurlHandle.cpp.obj
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles\mailclient-cpp.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = libmailclient-cpp.a
-  TARGET_PDB = mailclient-cpp.a.dbg
 
 
 #############################################
@@ -224,12 +185,606 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/bhussein/Desktop/CERT Alert System/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for Experimental
+
+build libs/pugixml/Experimental: phony libs/pugixml/CMakeFiles/Experimental
+
+
+#############################################
+# Utility command for Nightly
+
+build libs/pugixml/Nightly: phony libs/pugixml/CMakeFiles/Nightly
+
+
+#############################################
+# Utility command for Continuous
+
+build libs/pugixml/Continuous: phony libs/pugixml/CMakeFiles/Continuous
+
+
+#############################################
+# Utility command for NightlyMemoryCheck
+
+build libs/pugixml/NightlyMemoryCheck: phony libs/pugixml/CMakeFiles/NightlyMemoryCheck
+
+
+#############################################
+# Utility command for NightlyStart
+
+build libs/pugixml/NightlyStart: phony libs/pugixml/CMakeFiles/NightlyStart
+
+
+#############################################
+# Utility command for NightlyUpdate
+
+build libs/pugixml/NightlyUpdate: phony libs/pugixml/CMakeFiles/NightlyUpdate
+
+
+#############################################
+# Utility command for NightlyConfigure
+
+build libs/pugixml/NightlyConfigure: phony libs/pugixml/CMakeFiles/NightlyConfigure
+
+
+#############################################
+# Utility command for NightlyBuild
+
+build libs/pugixml/NightlyBuild: phony libs/pugixml/CMakeFiles/NightlyBuild
+
+
+#############################################
+# Utility command for NightlyTest
+
+build libs/pugixml/NightlyTest: phony libs/pugixml/CMakeFiles/NightlyTest
+
+
+#############################################
+# Utility command for NightlyCoverage
+
+build libs/pugixml/NightlyCoverage: phony libs/pugixml/CMakeFiles/NightlyCoverage
+
+
+#############################################
+# Utility command for NightlyMemCheck
+
+build libs/pugixml/NightlyMemCheck: phony libs/pugixml/CMakeFiles/NightlyMemCheck
+
+
+#############################################
+# Utility command for NightlySubmit
+
+build libs/pugixml/NightlySubmit: phony libs/pugixml/CMakeFiles/NightlySubmit
+
+
+#############################################
+# Utility command for ExperimentalStart
+
+build libs/pugixml/ExperimentalStart: phony libs/pugixml/CMakeFiles/ExperimentalStart
+
+
+#############################################
+# Utility command for ExperimentalUpdate
+
+build libs/pugixml/ExperimentalUpdate: phony libs/pugixml/CMakeFiles/ExperimentalUpdate
+
+
+#############################################
+# Utility command for ExperimentalConfigure
+
+build libs/pugixml/ExperimentalConfigure: phony libs/pugixml/CMakeFiles/ExperimentalConfigure
+
+
+#############################################
+# Utility command for ExperimentalBuild
+
+build libs/pugixml/ExperimentalBuild: phony libs/pugixml/CMakeFiles/ExperimentalBuild
+
+
+#############################################
+# Utility command for ExperimentalTest
+
+build libs/pugixml/ExperimentalTest: phony libs/pugixml/CMakeFiles/ExperimentalTest
+
+
+#############################################
+# Utility command for ExperimentalCoverage
+
+build libs/pugixml/ExperimentalCoverage: phony libs/pugixml/CMakeFiles/ExperimentalCoverage
+
+
+#############################################
+# Utility command for ExperimentalMemCheck
+
+build libs/pugixml/ExperimentalMemCheck: phony libs/pugixml/CMakeFiles/ExperimentalMemCheck
+
+
+#############################################
+# Utility command for ExperimentalSubmit
+
+build libs/pugixml/ExperimentalSubmit: phony libs/pugixml/CMakeFiles/ExperimentalSubmit
+
+
+#############################################
+# Utility command for ContinuousStart
+
+build libs/pugixml/ContinuousStart: phony libs/pugixml/CMakeFiles/ContinuousStart
+
+
+#############################################
+# Utility command for ContinuousUpdate
+
+build libs/pugixml/ContinuousUpdate: phony libs/pugixml/CMakeFiles/ContinuousUpdate
+
+
+#############################################
+# Utility command for ContinuousConfigure
+
+build libs/pugixml/ContinuousConfigure: phony libs/pugixml/CMakeFiles/ContinuousConfigure
+
+
+#############################################
+# Utility command for ContinuousBuild
+
+build libs/pugixml/ContinuousBuild: phony libs/pugixml/CMakeFiles/ContinuousBuild
+
+
+#############################################
+# Utility command for ContinuousTest
+
+build libs/pugixml/ContinuousTest: phony libs/pugixml/CMakeFiles/ContinuousTest
+
+
+#############################################
+# Utility command for ContinuousCoverage
+
+build libs/pugixml/ContinuousCoverage: phony libs/pugixml/CMakeFiles/ContinuousCoverage
+
+
+#############################################
+# Utility command for ContinuousMemCheck
+
+build libs/pugixml/ContinuousMemCheck: phony libs/pugixml/CMakeFiles/ContinuousMemCheck
+
+
+#############################################
+# Utility command for ContinuousSubmit
+
+build libs/pugixml/ContinuousSubmit: phony libs/pugixml/CMakeFiles/ContinuousSubmit
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target pugixml-static
+
+
+#############################################
+# Order-only phony target for pugixml-static
+
+build cmake_object_order_depends_target_pugixml-static: phony || libs/pugixml/CMakeFiles/pugixml-static.dir
+
+build libs/pugixml/CMakeFiles/pugixml-static.dir/src/pugixml.cpp.obj: CXX_COMPILER__pugixml-static_unscanned_Debug C$:/Users/bhussein/Desktop/CERT$ Alert$ System/libs/pugixml/src/pugixml.cpp || cmake_object_order_depends_target_pugixml-static
+  DEP_FILE = libs\pugixml\CMakeFiles\pugixml-static.dir\src\pugixml.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/bhussein/Desktop/CERT Alert System/libs" -I"C:/Users/bhussein/Desktop/CERT Alert System/libs/pugixml/src"
+  OBJECT_DIR = libs\pugixml\CMakeFiles\pugixml-static.dir
+  OBJECT_FILE_DIR = libs\pugixml\CMakeFiles\pugixml-static.dir\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target pugixml-static
+
+
+#############################################
+# Link the static library libs\pugixml\libpugixml.a
+
+build libs/pugixml/libpugixml.a: CXX_STATIC_LIBRARY_LINKER__pugixml-static_Debug libs/pugixml/CMakeFiles/pugixml-static.dir/src/pugixml.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = libs\pugixml\CMakeFiles\pugixml-static.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = libs\pugixml\libpugixml.a
+  TARGET_PDB = pugixml.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build libs/pugixml/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build libs/pugixml/edit_cache: phony libs/pugixml/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build libs/pugixml/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\bhussein\Desktop\CERT Alert System" -B"C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build libs/pugixml/rebuild_cache: phony libs/pugixml/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build libs/pugixml/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build libs/pugixml/CMakeFiles/install.util: CUSTOM_COMMAND libs/pugixml/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build libs/pugixml/install: phony libs/pugixml/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build libs/pugixml/CMakeFiles/install/local.util: CUSTOM_COMMAND libs/pugixml/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build libs/pugixml/install/local: phony libs/pugixml/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build libs/pugixml/CMakeFiles/install/strip.util: CUSTOM_COMMAND libs/pugixml/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build libs/pugixml/install/strip: phony libs/pugixml/CMakeFiles/install/strip.util
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\Experimental
+
+build libs/pugixml/CMakeFiles/Experimental | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/Experimental: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D Experimental"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\Nightly
+
+build libs/pugixml/CMakeFiles/Nightly | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/Nightly: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D Nightly"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\Continuous
+
+build libs/pugixml/CMakeFiles/Continuous | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/Continuous: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D Continuous"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\NightlyMemoryCheck
+
+build libs/pugixml/CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D NightlyMemoryCheck"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\NightlyStart
+
+build libs/pugixml/CMakeFiles/NightlyStart | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/NightlyStart: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D NightlyStart"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\NightlyUpdate
+
+build libs/pugixml/CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/NightlyUpdate: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D NightlyUpdate"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\NightlyConfigure
+
+build libs/pugixml/CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D NightlyConfigure"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\NightlyBuild
+
+build libs/pugixml/CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/NightlyBuild: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D NightlyBuild"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\NightlyTest
+
+build libs/pugixml/CMakeFiles/NightlyTest | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/NightlyTest: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D NightlyTest"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\NightlyCoverage
+
+build libs/pugixml/CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/NightlyCoverage: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D NightlyCoverage"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\NightlyMemCheck
+
+build libs/pugixml/CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D NightlyMemCheck"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\NightlySubmit
+
+build libs/pugixml/CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/NightlySubmit: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D NightlySubmit"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\ExperimentalStart
+
+build libs/pugixml/CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D ExperimentalStart"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\ExperimentalUpdate
+
+build libs/pugixml/CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D ExperimentalUpdate"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\ExperimentalConfigure
+
+build libs/pugixml/CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/ExperimentalConfigure: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D ExperimentalConfigure"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\ExperimentalBuild
+
+build libs/pugixml/CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D ExperimentalBuild"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\ExperimentalTest
+
+build libs/pugixml/CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D ExperimentalTest"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\ExperimentalCoverage
+
+build libs/pugixml/CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/ExperimentalCoverage: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D ExperimentalCoverage"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\ExperimentalMemCheck
+
+build libs/pugixml/CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/ExperimentalMemCheck: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D ExperimentalMemCheck"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\ExperimentalSubmit
+
+build libs/pugixml/CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D ExperimentalSubmit"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\ContinuousStart
+
+build libs/pugixml/CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/ContinuousStart: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D ContinuousStart"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\ContinuousUpdate
+
+build libs/pugixml/CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D ContinuousUpdate"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\ContinuousConfigure
+
+build libs/pugixml/CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/ContinuousConfigure: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D ContinuousConfigure"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\ContinuousBuild
+
+build libs/pugixml/CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/ContinuousBuild: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D ContinuousBuild"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\ContinuousTest
+
+build libs/pugixml/CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/ContinuousTest: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D ContinuousTest"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\ContinuousCoverage
+
+build libs/pugixml/CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/ContinuousCoverage: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D ContinuousCoverage"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\ContinuousMemCheck
+
+build libs/pugixml/CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D ContinuousMemCheck"
+  pool = console
+
+
+#############################################
+# Custom command for libs\pugixml\CMakeFiles\ContinuousSubmit
+
+build libs/pugixml/CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}libs/pugixml/CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\bhussein\Desktop\CERT Alert System\cmake-build-debug\libs\pugixml" && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\ctest.exe" -D ContinuousSubmit"
+  pool = console
+
 # =============================================================================
 # Target aliases.
 
 build CERT_Alert_System: phony CERT_Alert_System.exe
 
-build mailclient-cpp: phony libmailclient-cpp.a
+build Continuous: phony libs/pugixml/Continuous
+
+build ContinuousBuild: phony libs/pugixml/ContinuousBuild
+
+build ContinuousConfigure: phony libs/pugixml/ContinuousConfigure
+
+build ContinuousCoverage: phony libs/pugixml/ContinuousCoverage
+
+build ContinuousMemCheck: phony libs/pugixml/ContinuousMemCheck
+
+build ContinuousStart: phony libs/pugixml/ContinuousStart
+
+build ContinuousSubmit: phony libs/pugixml/ContinuousSubmit
+
+build ContinuousTest: phony libs/pugixml/ContinuousTest
+
+build ContinuousUpdate: phony libs/pugixml/ContinuousUpdate
+
+build Experimental: phony libs/pugixml/Experimental
+
+build ExperimentalBuild: phony libs/pugixml/ExperimentalBuild
+
+build ExperimentalConfigure: phony libs/pugixml/ExperimentalConfigure
+
+build ExperimentalCoverage: phony libs/pugixml/ExperimentalCoverage
+
+build ExperimentalMemCheck: phony libs/pugixml/ExperimentalMemCheck
+
+build ExperimentalStart: phony libs/pugixml/ExperimentalStart
+
+build ExperimentalSubmit: phony libs/pugixml/ExperimentalSubmit
+
+build ExperimentalTest: phony libs/pugixml/ExperimentalTest
+
+build ExperimentalUpdate: phony libs/pugixml/ExperimentalUpdate
+
+build Nightly: phony libs/pugixml/Nightly
+
+build NightlyBuild: phony libs/pugixml/NightlyBuild
+
+build NightlyConfigure: phony libs/pugixml/NightlyConfigure
+
+build NightlyCoverage: phony libs/pugixml/NightlyCoverage
+
+build NightlyMemCheck: phony libs/pugixml/NightlyMemCheck
+
+build NightlyMemoryCheck: phony libs/pugixml/NightlyMemoryCheck
+
+build NightlyStart: phony libs/pugixml/NightlyStart
+
+build NightlySubmit: phony libs/pugixml/NightlySubmit
+
+build NightlyTest: phony libs/pugixml/NightlyTest
+
+build NightlyUpdate: phony libs/pugixml/NightlyUpdate
+
+build libpugixml.a: phony libs/pugixml/libpugixml.a
+
+build pugixml-static: phony libs/pugixml/libpugixml.a
 
 build sqlite3: phony libsqlite3.a
 
@@ -241,7 +796,14 @@ build sqlite3: phony libsqlite3.a
 #############################################
 # Folder: C:/Users/bhussein/Desktop/CERT Alert System/cmake-build-debug
 
-build all: phony CERT_Alert_System.exe libsqlite3.a libmailclient-cpp.a
+build all: phony CERT_Alert_System.exe libsqlite3.a libs/pugixml/libpugixml.a libs/pugixml/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/bhussein/Desktop/CERT Alert System/cmake-build-debug/libs/pugixml
+
+build libs/pugixml/all: phony libs/pugixml/libpugixml.a
 
 # =============================================================================
 # Built-in targets
@@ -250,14 +812,14 @@ build all: phony CERT_Alert_System.exe libsqlite3.a libmailclient-cpp.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/bhussein/Desktop/CERT$ Alert$ System/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CTest.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CTestTargets.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CTestUseLaunchers.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/DartConfiguration.tcl.in C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/bhussein/Desktop/CERT$ Alert$ System/CMakeLists.txt C$:/Users/bhussein/Desktop/CERT$ Alert$ System/libs/pugixml/CMakeLists.txt C$:/Users/bhussein/Desktop/CERT$ Alert$ System/libs/pugixml/scripts/pugixml-config.cmake.in C$:/Users/bhussein/Desktop/CERT$ Alert$ System/libs/pugixml/scripts/pugixml.pc.in CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/bhussein/Desktop/CERT$ Alert$ System/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CTest.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CTestTargets.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CTestUseLaunchers.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/DartConfiguration.tcl.in C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/bhussein/Desktop/CERT$ Alert$ System/CMakeLists.txt C$:/Users/bhussein/Desktop/CERT$ Alert$ System/libs/pugixml/CMakeLists.txt C$:/Users/bhussein/Desktop/CERT$ Alert$ System/libs/pugixml/scripts/pugixml-config.cmake.in C$:/Users/bhussein/Desktop/CERT$ Alert$ System/libs/pugixml/scripts/pugixml.pc.in CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
 
 
 #############################################

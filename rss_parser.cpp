@@ -1,16 +1,12 @@
 #include "rss_parser.h"
-#include <iostream>
-#include <pugixml.hpp>
-#include <vector>
-#include <string>
 #include "rss_fetcher.h"
 #include "db_operations.h"
-#include "SMTPClient.h"
-#include "MAILClient.h"
-#include "CurlHandle.h"
-#include <fstream>
-
-using namespace jed_utils;
+#include "strptime.h"  // Include custom strptime header
+#include <pugixml.hpp>
+#include <iostream>
+#include <windows.h>
+#include <mapi.h>
+#include <ctime>
 
 bool containsKeyword(const std::string& text, const std::vector<std::string>& keywords, std::string& matchedKeyword) {
     for (const auto& keyword : keywords) {
@@ -35,44 +31,12 @@ void storeAdvisory(sqlite3* db, const std::string& title, const std::string& des
         sqlite3_bind_text(stmt, 6, keywords_matched.c_str(), -1, SQLITE_STATIC);
         sqlite3_step(stmt);
         sqlite3_finalize(stmt);
+    } else {
+        std::cerr << "Error storing advisory: " << sqlite3_errmsg(db) << std::endl;
     }
 }
 
-void showNotification(const std::string& title, const std::string& message) {
-    MessageBoxA(NULL, message.c_str(), title.c_str(), MB_OK | MB_ICONINFORMATION);
-}
-
-void sendEmailNotification(const std::string& subject, const std::string& body) {
-    // Load email configuration
-    std::ifstream configFile("email_config.ini");
-    std::string smtpServer, smtpPort, emailAddress, emailPassword;
-    if (configFile.is_open()) {
-        std::string line;
-        while (std::getline(configFile, line)) {
-            size_t pos = line.find("=");
-            std::string key = line.substr(0, pos);
-            std::string value = line.substr(pos + 1);
-            if (key == "smtpServer") smtpServer = value;
-            else if (key == "smtpPort") smtpPort = value;
-            else if (key == "emailAddress") emailAddress = value;
-            else if (key == "emailPassword") emailPassword = value;
-        }
-        configFile.close();
-    }
-
-    // Prepare email
-    EmailAddress sender(emailAddress.c_str(), "Sender");
-    EmailAddress recipient(emailAddress.c_str(), "Recipient"); // For testing, send to the same address
-    MimeMessage message(&sender, "CERT Alert", body.c_str(), MimeMessage::TEXT_HTML);
-    message.addRecipient(&recipient);
-
-    // Set SMTP server and send email
-    SmtpClient smtp(smtpServer.c_str(), std::stoi(smtpPort));
-    smtp.setCredentials(emailAddress.c_str(), emailPassword.c_str());
-    smtp.sendMail(message);
-}
-
-void parseRSSFeed(sqlite3* db, const std::string& url) {
+void parseRSSFeed(sqlite3* db, const std::string& url, const std::string& startDate) {
     std::string rssContent = fetchRSSFeed(url);
 
     if (rssContent.empty()) {
@@ -98,6 +62,16 @@ void parseRSSFeed(sqlite3* db, const std::string& url) {
         std::string date = item.child_value("pubDate");
         std::string matchedKeyword;
 
+        struct tm tm;
+        strptime(date.c_str(), "%a, %d %b %Y %H:%M:%S %Z", &tm);
+        time_t itemTime = mktime(&tm);
+        strptime(startDate.c_str(), "%Y-%m-%d", &tm);
+        time_t startTime = mktime(&tm);
+
+        if (difftime(itemTime, startTime) < 0) {
+            continue;
+        }
+
         if (containsKeyword(title, keywords, matchedKeyword) || containsKeyword(description, keywords, matchedKeyword)) {
             std::cout << "Title: " << title << std::endl;
             std::cout << "Link: " << link << std::endl;
@@ -110,4 +84,40 @@ void parseRSSFeed(sqlite3* db, const std::string& url) {
             sendEmailNotification(title, description);
         }
     }
+}
+
+void showNotification(const std::string& title, const std::string& message) {
+    MessageBoxA(NULL, message.c_str(), title.c_str(), MB_OK | MB_ICONINFORMATION);
+}
+
+void sendEmailNotification(const std::string& subject, const std::string& body) {
+    HINSTANCE hMapi = LoadLibraryA("MAPI32.DLL");
+    if (!hMapi) {
+        std::cerr << "MAPI library not found." << std::endl;
+        return;
+    }
+
+    LPMAPISENDMAIL lpfnMAPISendMail = (LPMAPISENDMAIL)GetProcAddress(hMapi, "MAPISendMail");
+    if (!lpfnMAPISendMail) {
+        std::cerr << "MAPISendMail not found." << std::endl;
+        FreeLibrary(hMapi);
+        return;
+    }
+
+    MapiMessage message = { 0 };
+    MapiRecipDesc recipient = { 0 };
+    recipient.ulRecipClass = MAPI_TO;
+    recipient.lpszAddress = const_cast<char*>("mailto:your-email@example.com");
+    recipient.lpszName = const_cast<char*>("Recipient Name");
+
+    message.lpszSubject = const_cast<char*>(subject.c_str());
+    message.lpszNoteText = const_cast<char*>(body.c_str());
+    message.nRecipCount = 1;
+    message.lpRecips = &recipient;
+
+    if (lpfnMAPISendMail(0, 0, &message, MAPI_LOGON_UI | MAPI_DIALOG, 0) != SUCCESS_SUCCESS) {
+        std::cerr << "Failed to send email." << std::endl;
+    }
+
+    FreeLibrary(hMapi);
 }
