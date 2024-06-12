@@ -7,7 +7,8 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <ctime>
+#include <thread>
+#include <chrono>
 
 void configureEmailSettings() {
     EmailConfig config;
@@ -51,6 +52,14 @@ void configureLogFilePath() {
     setLogFilePath(path);
     loadLoggedAlarms(path);  // Load alarms from the specified log file
     std::cout << "Log file path configured successfully." << std::endl;
+}
+
+void configureInterval() {
+    AppConfig config = loadAppConfig();
+    std::cout << "Enter the interval in minutes for automatic RSS feed parsing: ";
+    std::cin >> config.intervalMinutes;
+    saveAppConfig(config);
+    std::cout << "Interval saved successfully." << std::endl;
 }
 
 void handleAddKeyword(sqlite3* db) {
@@ -112,4 +121,12 @@ void handleParseRSSFeed(sqlite3* db) {
     saveAppConfig(config);
 
     std::cout << "RSS feed parsed successfully." << std::endl;
+}
+
+void autoRunParser(sqlite3* db) {
+    AppConfig config = loadAppConfig();
+    while (true) {
+        handleParseRSSFeed(db);
+        std::this_thread::sleep_for(std::chrono::minutes(config.intervalMinutes));
+    }
 }

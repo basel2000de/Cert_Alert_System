@@ -4,6 +4,7 @@
 #include "db_init.h"
 #include "config.h"
 #include "log.h"
+#include <thread>
 
 int main() {
     sqlite3* db;
@@ -14,46 +15,68 @@ int main() {
     }
 
     initializeDatabase(db);
+    std::string defaultLogFilePath = "alert_log.txt";
+    setLogFilePath(defaultLogFilePath);
+    loadLoggedAlarms(getLogFilePath());  // Load logged alarms to avoid duplicates
 
     char choice;
+    bool autoRun = false;
+    std::thread autoRunThread;
+
     while (true) {
         std::cout << "\nCERT Alert System Menu:\n";
         std::cout << "1. Configure Email Settings\n";
         std::cout << "2. Configure RSS Link\n";
-        std::cout << "3. Configure Log File Path\n";  // New option for log file path
-        std::cout << "4. Add Keyword\n";
-        std::cout << "5. Remove Keyword\n";
-        std::cout << "6. List Keywords\n";
-        std::cout << "7. Parse RSS Feed\n";
-        std::cout << "8. Exit\n";
+        std::cout << "3. Configure Log File Path\n";
+        std::cout << "4. Configure Interval for Auto Run\n";
+        std::cout << "5. Add Keyword\n";
+        std::cout << "6. Remove Keyword\n";
+        std::cout << "7. List Keywords\n";
+        std::cout << "8. Parse RSS Feed\n";
+        std::cout << "9. Enable/Disable Auto Run\n";
+        std::cout << "0. Exit\n";
         std::cout << "Enter your choice: ";
         std::cin >> choice;
 
         switch (choice) {
             case '1':
                 configureEmailSettings();
-            break;
+                break;
             case '2':
                 configureRSSLink();
-            break;
+                break;
             case '3':
-                configureLogFilePath();  // Handle log file path configuration
-            break;
+                configureLogFilePath();
+                break;
             case '4':
-                handleAddKeyword(db);
-            break;
+                configureInterval();
+                break;
             case '5':
-                handleRemoveKeyword(db);
-            break;
+                handleAddKeyword(db);
+                break;
             case '6':
-                handleListKeywords(db);
-            break;
+                handleRemoveKeyword(db);
+                break;
             case '7':
-                handleParseRSSFeed(db);
-            break;
+                handleListKeywords(db);
+                break;
             case '8':
+                handleParseRSSFeed(db);
+                break;
+            case '9':
+                autoRun = !autoRun;
+                if (autoRun) {
+                    std::cout << "Auto Run enabled." << std::endl;
+                    autoRunThread = std::thread(autoRunParser, db);
+                    autoRunThread.detach();
+                } else {
+                    std::cout << "Auto Run disabled." << std::endl;
+                    // Optionally, implement a way to stop the thread gracefully
+                }
+                break;
+            case '0':
                 sqlite3_close(db);
-            return 0;
+                return 0;
             default:
                 std::cout << "Invalid choice. Please try again.\n";
         }

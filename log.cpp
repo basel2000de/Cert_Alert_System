@@ -2,9 +2,12 @@
 #include <fstream>
 #include <iostream>
 #include <set>
+#include <filesystem>
+
+namespace fs = std::filesystem;
 
 std::set<std::string> loggedAlarms;
-std::string logFilePath = "alarms.log";
+std::string logFilePath = "alert_log.txt";
 
 void setLogFilePath(const std::string& path) {
     logFilePath = path;
@@ -15,6 +18,16 @@ std::string getLogFilePath() {
 }
 
 void loadLoggedAlarms(const std::string& logFilePath) {
+    // Check if the log file exists, if not create it
+    if (!fs::exists(logFilePath)) {
+        std::ofstream logFile(logFilePath);
+        if (!logFile.is_open()) {
+            std::cerr << "Error creating log file: " << logFilePath << std::endl;
+            return;
+        }
+        logFile.close();
+    }
+
     std::ifstream logFile(logFilePath);
     if (logFile.is_open()) {
         std::string line;

@@ -14,6 +14,7 @@ struct EmailConfig {
 struct AppConfig {
     std::string rssLink;
     std::string lastRunDate;
+    int intervalMinutes;  // New interval configuration
 };
 
 void saveEmailConfig(const EmailConfig& config);
