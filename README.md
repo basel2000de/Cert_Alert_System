@@ -37,7 +37,7 @@ The development process involved:
 
 1. **Clone the Repository**
    ```sh
-   git clone https://github.com/yourusername/CERT_Alert_System.git
+   git clone https://github.com/basel200de/CERT_Alert_System.git
    cd CERT_Alert_System
    ```
 
